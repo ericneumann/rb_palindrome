@@ -20,5 +20,12 @@ class Eneumann::PalindromeTest < Minitest::Test
     assert "Madam, I'm Adam.".palindrome?
   end
 
+  def test_integer_palindrome
+    assert 12345654321.palindrome?
+  end
+
+  def test_integer_non_palindrome
+    refute 1234.palindrome?
+  end
   
 end
